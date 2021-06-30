@@ -200,12 +200,14 @@ if (modalBrif && toModalBrifBtns.length > 0) {
   modalBg.addEventListener('click', function (e) {
     modalBrif.classList.remove('active')
     document.body.style.overflow = 'auto'
-  
+    document.querySelector('html').style.overflow = 'auto'
+
   })
   toModalBrifBtns.forEach(function (btn) {
     btn.addEventListener('click', function (e) {
       modalBrif.classList.add('active')
       document.body.style.overflow = 'hidden'
+      document.querySelector('html').style.overflow = 'hidden'
     })
   })
 }
