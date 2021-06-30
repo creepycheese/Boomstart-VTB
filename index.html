@@ -11,52 +11,88 @@
 
 <body>
 
-  <header class="hero">
-    <img src="img/stars/star-icon-1.png" alt="" class="hero-bg-1">
-    <img src="img/stars/star-icon-1.png" alt="" class="hero-bg-2">
-    <img src="img/stars/star-icon-1.png" alt="" class="hero-bg-3">
-    <img src="img/stars/star-icon-1.png" alt="" class="hero-bg-4">
-    <img src="img/stars/star-icon-1.png" alt="" class="hero-bg-5">
-    <img src="img/stars/star-icon-1.png" alt="" class="hero-bg-6">
-    <img src="img/stars/star-icon-1.png" alt="" class="hero-bg-7">
-    <img src="img/stars/star-icon-1.png" alt="" class="hero-bg-8">
-    <img src="img/stars/star-icon-2.png" alt="" class="hero-bg-9">
+  <div class="modal modal-brif">
+    <div class="modal-bg"></div>
+    <div class="modal-block">
+      <h2 class="modal-brif-title">Оставить заявку <br>
+        на открытие расчётного счёта</h2>
+      <span class="modal-brif-subtitle">и получить год бесплатного обслуживания и размещение на Бумстартере</span>
+      <form action="#" class="modal-brif-form" id="brifModalForm">
+        <div class="input-block">
+          <input type="text" class="input" placeholder="Имя" autocomplete="off" name="boomname" minlength="2"
+            maxlength="80">
+        </div>
+        <div class="input-block">
+          <input type="tel" class="input form-tel" data-tel-input autocomplete="off" name="boomtel" minlength="18"
+            maxlength="18" placeholder="Телефон">
+        </div>
+
+        <input type="submit" value="Оставить заявку" class="btn-primary">
+      </form>
+    </div>
+  </div>
+
+  <header class=" header">
     <div class="wrap">
-      <img src="img/hero/hero-img.png" alt="" class="hero-img">
-      <a href="#" class="logo">
+      <a href="#top" class="logo anchor">
         <img src="img/logo.svg" alt="Boomstarter и ВТБ: Быстрый старт">
       </a>
+      <nav class="header-nav">
+        <ul>
+          <li><a href="#about" class="anchor">Что получит бизнес</a></li>
+          <li><a href="#bonuses" class="anchor">Бонусы от ВТБ</a></li>
+          <li><a href="#getBonuses" class="anchor">Что сделать</a></li>
+        </ul>
+      </nav>
 
+      <div class="btn header-btn js-toModalBrif">Оставить заявку</div>
+    </div>
+  </header>
+
+
+  <main class="main">
+    <section class="hero" id="top">
+
+      <img src="img/stars/star-icon-1.png" alt="" class="hero-bg-1">
+      <img src="img/stars/star-icon-1.png" alt="" class="hero-bg-2">
+      <img src="img/stars/star-icon-1.png" alt="" class="hero-bg-3">
+      <img src="img/stars/star-icon-1.png" alt="" class="hero-bg-4">
+      <img src="img/stars/star-icon-1.png" alt="" class="hero-bg-5">
+      <img src="img/stars/star-icon-1.png" alt="" class="hero-bg-6">
+      <img src="img/stars/star-icon-1.png" alt="" class="hero-bg-7">
+      <img src="img/stars/star-icon-1.png" alt="" class="hero-bg-8">
+      <img src="img/stars/star-icon-2.png" alt="" class="hero-bg-9">
+
+      <div class="wrap">
+        <img src="img/hero/hero-img.png" alt="" class="hero-img">
+        <a href="#top" class="logo anchor">
+          <img src="img/logo.svg" alt="Boomstarter и ВТБ: Быстрый старт">
+        </a>
+
+
+      </div>
       <div class="wrap-mini">
         <div class="hero-wrap ">
 
           <h1 class="hero-title">
-            Бесплатное размещение проекта на Бумстартере
+            Бесплатное размещение проекта на&nbsp;Бумстартере
           </h1>
           <span class="hero-subtitle">
-            и год бесплатного обслуживания при открытии расчётного счёта в ВТБ
+            и&nbsp;год бесплатного обслуживания <br> при открытии расчётного счёта в&nbsp;ВТБ
           </span>
 
-          <a href="#brif" class="anchor hero-btn btn">Оставить заявку</a>
+          <div class=" hero-btn btn js-toModalBrif">Оставить заявку</div>
         </div>
       </div>
-    </div>
-  </header>
-
-  <main class="main">
-
-    <section class="section about">
+    </section>
+    <section class="section about" id="about">
       <img src="img/stars/bg-star-blue.png" alt="" class="about-bg-1">
-      <img src="img/stars/star-icon-3.png" alt="" class="about-bg-2">
-      <img src="img/stars/star-icon-3.png" alt="" class="about-bg-3">
-      <img src="img/stars/star-icon-4.png" alt="" class="about-bg-4">
-      <img src="img/stars/star-icon-5.png" alt="" class="about-bg-5">
-      <img src="img/stars/star-icon-5.png" alt="" class="about-bg-6">
-      <img src="img/stars/star-icon-6.png" alt="" class="about-bg-7">
-      <img src="img/stars/star-icon-7.png" alt="" class="about-bg-8">
+      <img src="img/stars/bg-3.png" alt="" class="about-bg-2">
+      <img src="img/stars/bg-4.png" alt="" class="about-bg-3">
+      <img src="img/stars/bg-5.png" alt="" class="about-bg-4">
+
 
       <div class="wrap-mini">
-        <img src="img/stars/star-about.png" alt="" class="about-star">
         <h2 class="section-title">ВТБ и Бумстартер <br>
           помогают бизнесу стартовать</h2>
 
@@ -71,7 +107,7 @@
         <div class="about-item about-item-2">
           <img src="img/about/about-2.png" alt="" class="about-item__img">
           <div class="about-item__descr">
-            <span class="hint">Рассылка о проекте 
+            <span class="hint">Рассылка о проекте
               по базе 500 000 человек</span>
             <span>активных подписчиков Бумстартера</span>
           </div>
@@ -79,7 +115,7 @@
         <div class="about-item about-item-3">
           <img src="img/about/about-3.png" alt="" class="about-item__img">
           <div class="about-item__descr">
-            <span class="hint">Год бесплатного 
+            <span class="hint">Год бесплатного
               обслуживания</span>
             <span>в банке ВТБ</span>
           </div>
@@ -87,7 +123,7 @@
       </div>
     </section>
 
-    <section class="section bonuses">
+    <section class="section bonuses" id="bonuses">
       <div class="wrap-mini">
         <h2 class="section-title bonuses-title">Бонусы для участников от&nbsp;ВТБ</h2>
         <div class="bonuses-wrap">
@@ -101,7 +137,7 @@
           </div>
           <div class="bonuses-item">
             <img src="img/bonuses/bonuse-3.png" alt="">
-            <span>15&nbsp;000&nbsp;₽ на&nbsp;первую <br> кампанию в&nbsp;Яндексе</span>
+            <span>5&nbsp;000&nbsp;₽ на&nbsp;первую <br> кампанию в&nbsp;Яндексе</span>
           </div>
           <div class="bonuses-item">
             <img src="img/bonuses/bonuse-4.png" alt="">
@@ -119,14 +155,11 @@
       </div>
     </section>
 
-
-    <section class="section getBonuses">
-      <img src="img/stars/bg-star-blue.png" alt="" class="getBonuses-bg-1">
-      <img src="img/stars/bg-star-pink.png" alt="" class="getBonuses-bg-2">
+    <section class="section getBonuses" id="getBonuses">
 
       <div class="wrap-mini">
         <h2 class="section-title">Как получить бонусы</h2>
-        <div class="getBonuses-item">
+        <!-- <div class="getBonuses-item">
           <img src="img/bonuses/bonuses-icon.svg" alt="">
           <span><a href="#brif" class="anchor">Оставить заявку</a> на&nbsp;подключение</span>
         </div>
@@ -146,7 +179,7 @@
         <div class="getBonuses-item">
           <img src="img/bonuses/bonuses-icon.svg" alt="">
           <span>Получить бонусы и бесплатное размещение</span>
-        </div>
+        </div> -->
       </div>
     </section>
 
@@ -225,7 +258,7 @@
           <a href="#" class="link footer-nav__link">Политика конфиденциальности</a>
           <a href="#" class="link footer-nav__link">Правила участия</a>
         </div>
-        <a href="#" class="footer-logo">
+        <a href="#top" class="anchor footer-logo">
           <img src="img/logo.svg" alt="Boomstarter и ВТБ: Быстрый старт">
         </a>
       </div>
