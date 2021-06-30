@@ -7,9 +7,11 @@ $mail->CharSet = 'utf-8';
 $name = $_POST['boomname'];
 $phone = $_POST['boomtel'];
 
+
 //$mail->SMTPDebug = 3;                               // Enable verbose debug output
 
 $mail->isSMTP();                                      // Set mailer to use SMTP
+
 $mail->Host = 'smtp.mail.ru';  																							// Specify main and backup SMTP servers
 $mail->SMTPAuth = true;                               // Enable SMTP authentication
 $mail->Username = 'adm.vtb@mail.ru'; // Ваш логин от почты с которой будут отправляться письма
@@ -27,13 +29,17 @@ $mail->addAddress('nickita_yushenko@mail.ru');     // Кому будет ухо
 //$mail->addAttachment('/tmp/image.jpg', 'new.jpg');    // Optional name
 $mail->isHTML(true);                                  // Set email format to HTML
 
-$mail->Subject = 'PROMA: Заявка на подключение';
-$mail->Body    = 'Новая заявка <br> Имя: ' .$name . ' <br> Номер телефона: ' .$phone;
+$mail->Subject = 'Заявка с тестового сайта';
+$mail->Body    = '' .$name . ' оставил заявку, его телефон ' .$phone. '<br>Почта этого пользователя: ' .$email;
 $mail->AltBody = '';
 
 if(!$mail->send()) {
-
+    echo 'Error';
 } else {
-  header("location: index.html");
+    header('location: thank-you.html');
 }
 ?>
+
+
+<!-- старый код  -->
+
