@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.min.css">
+  <title>Boomstarter ВТБ</title>
+</head>
+
+<body>
+  <div class="modal modal-brif">
+    <div class="modal-bg"></div>
+    <div class="modal-block">
+      <h2 class="modal-brif-title">Оставить заявку <br>
+        на&nbsp;открытие расчётного счёта</h2>
+      <span class="modal-brif-subtitle">и&nbsp;получить год бесплатного обслуживания и&nbsp;размещение
+        на&nbsp;Бумстартере</span>
+      <form method="POST" action="mail.php" class="modal-brif-form" id="brifModalForm">
+        <div class="input-block">
+          <input type="text" class="input" placeholder="Имя" autocomplete="off" name="boomname" minlength="2"
+            maxlength="80">
+        </div>
+        <div class="input-block">
+          <input type="tel" class="input form-tel" data-tel-input autocomplete="off" name="boomtel" minlength="18"
+            maxlength="18" placeholder="Телефон">
+        </div>
+        <input type="submit" value="Оставить заявку" class="btn-primary">
+      </form>
+    </div>
+  </div>
+  <header class=" header">
+    <div class="wrap">
+      <a href="#top" class="logo anchor">
+        <img src="img/logo.svg" alt="Boomstarter и ВТБ: Быстрый старт">
+      </a>
+      <nav class="header-nav">
+        <ul>
+          <li><a href="#about" class="anchor">Что получит бизнес</a></li>
+          <li><a href="#bonuses" class="anchor">Бонусы от&nbsp;ВТБ</a></li>
+          <li><a href="#getBonuses" class="anchor">Что сделать</a></li>
+        </ul>
+      </nav>
+      <div class="btn header-btn js-toModalBrif">Оставить заявку</div>
+    </div>
+  </header>
+  <main class="main">
+    <section class="hero" id="top">
+      <img src="img/stars/star-icon-1.png" alt="" class="hero-bg-1">
+      <img src="img/stars/star-icon-1.png" alt="" class="hero-bg-2">
+      <img src="img/stars/star-icon-1.png" alt="" class="hero-bg-3">
+      <img src="img/stars/star-icon-1.png" alt="" class="hero-bg-4">
+      <img src="img/stars/star-icon-1.png" alt="" class="hero-bg-5">
+      <img src="img/stars/star-icon-1.png" alt="" class="hero-bg-6">
+      <img src="img/stars/star-icon-1.png" alt="" class="hero-bg-7">
+      <img src="img/stars/star-icon-1.png" alt="" class="hero-bg-8">
+      <img src="img/stars/star-icon-2.png" alt="" class="hero-bg-9">
+      <div class="wrap">
+        <img src="img/hero/hero-img-2.png" alt="" class="hero-img">
+        <a href="#top" class="logo anchor">
+          <img src="img/logo.svg" alt="Boomstarter и ВТБ: Быстрый старт">
+        </a>
+      </div>
+      <div class="wrap-mini">
+        <div class="hero-wrap ">
+          <h1 class="hero-title">
+            Бесплатный пакет услуг <br> от&nbsp;Бумстартера <br> для авторов проектов
+          </h1>
+          <span class="hero-subtitle">
+            и&nbsp;год бесплатного обслуживания <br> в&nbsp;банке при открытии расчётного счёта в&nbsp;ВТБ
+          </span>
+          <div class=" hero-btn btn btn-pink js-toModalBrif">Оставить заявку</div>
+        </div>
+      </div>
+    </section>
+    <section class="section about" id="about">
+      <img src="img/stars/bg-star-blue.png" alt="" class="about-bg-1">
+      <img src="img/stars/bg-3.png" alt="" class="about-bg-2">
+      <img src="img/stars/bg-4.png" alt="" class="about-bg-3">
+      <img src="img/stars/bg-5.png" alt="" class="about-bg-4">
+      <div class="wrap-mini">
+        <h2 class="section-title">ВТБ и&nbsp;Бумстартер <br>
+          помогают бизнесу стартовать</h2>
+        <div class="about-item about-item-1">
+          <img src="img/about/about-1.png" alt="" class="about-item__img">
+          <div class="about-item__descr">
+            <span class="hint">Размещение <br> в&nbsp;соцсетях Бумстартера</span>
+            <span>на&nbsp;150&nbsp;000+ человек</span>
+          </div>
+        </div>
+        <div class="about-item about-item-2">
+          <img src="img/about/about-2.png" alt="" class="about-item__img">
+          <div class="about-item__descr">
+            <span class="hint">Рассылка о&nbsp;проекте
+              по&nbsp;базе 500&nbsp;000 человек</span>
+            <span>активных подписчиков Бумстартера</span>
+          </div>
+        </div>
+        <div class="about-item about-item-3">
+          <img src="img/about/about-3.png" alt="" class="about-item__img">
+          <div class="about-item__descr">
+            <span class="hint">Год бесплатного
+              обслуживания</span>
+            <span>в&nbsp;банке ВТБ</span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section bonuses" id="bonuses">
+      <div class="wrap-mini">
+        <h2 class="section-title bonuses-title">Бонусы для участников от&nbsp;ВТБ</h2>
+        <div class="bonuses-wrap">
+          <div class="bonuses-item">
+            <img src="img/bonuses/bonuse-1.png" alt="">
+            <span>7&nbsp;дней бесплатных <br> бухгалтерских консультаций</span>
+          </div>
+          <div class="bonuses-item">
+            <img src="img/bonuses/bonuse-2.png" alt="">
+            <span>Онлайн&mdash;регистрация ИП, ООО и&nbsp;самозанятых</span>
+          </div>
+          <div class="bonuses-item">
+            <img src="img/bonuses/bonuse-3.png" alt="">
+            <span>5&nbsp;000&nbsp;₽ на&nbsp;первую <br> кампанию в&nbsp;Яндексе</span>
+          </div>
+          <div class="bonuses-item">
+            <img src="img/bonuses/bonuse-4.png" alt="">
+            <span>Профессиональная юридическая поддержка 1&nbsp;месяц</span>
+          </div>
+          <div class="bonuses-item">
+            <img src="img/bonuses/bonuse-5.png" alt="">
+            <span>Конструктор <br> типовых документов</span>
+          </div>
+          <div class="bonuses-item">
+            <img src="img/bonuses/bonuse-6.png" alt="">
+            <span>Анализ рисков и&nbsp;рекомендации <br> по&nbsp;защите вашего бренда</span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section getBonuses" id="getBonuses">
+      <img src="img/bonuses/getBonuses-bg@2.svg" alt="" class="getBonuses-bg">
+      <div class="wrap-mini">
+        <img src="img/bonuses/getBonuses-bg-4.svg" alt="" class="getBonuses-bg-1">
+        <img src="img/bonuses/getBonuses-bg-5.svg" alt="" class="getBonuses-bg-4">
+        <div class="getBonuses-block">
+          <h2 class="getBonuses-title section-title">Что сделать</h2>
+          <div class="getBonuses-item">
+            <img src="img/bonuses/bonuses-icon.svg" alt="">
+            <span><a href="#brif" class="anchor">Оставить заявку</a> на&nbsp;подключение</span>
+          </div>
+          <div class="getBonuses-item">
+            <img src="img/bonuses/bonuses-icon.svg" alt="">
+            <span>Принять звонок от&nbsp;менеджера ВТБ</span>
+          </div>
+          <div class="getBonuses-item">
+            <img src="img/bonuses/bonuses-icon.svg" alt="">
+            <span>Отправить учредительные документы</span>
+          </div>
+          <div class="getBonuses-item">
+            <img src="img/bonuses/bonuses-icon.svg" alt="">
+            <span>Переслать письмо об&nbsp;успешном открытии счёта на&nbsp;<a
+                href="mailto:support@boomstarter.ru">support@boomstarter.ru</a> </span>
+          </div>
+        </div>
+        <div class="getBonuses-text">
+          <img src="img/bonuses/getBonuses-bg-2.svg" alt="" class="getBonuses-bg-2">
+          <img src="img/bonuses/getBonuses-bg-3.png" alt="" class="getBonuses-bg-3">
+          <span>Получить бонусы и&nbsp;бесплатное размещение
+            на&nbsp;Бумстартере
+          </span>
+        </div>
+      </div>
+    </section>
+    <section class="section brif" id="brif">
+      <div class="wrap-mini brif-wrap">
+        <div class="brif-descr">
+          <h2 class="brif-title section-title">
+            Оставить заявку <br>
+            на&nbsp;открытие расчётного счёта
+          </h2>
+          <span class="brif-subtitle">и&nbsp;получить год бесплатногообслуживания в&nbsp;ВТБ <br> и&nbsp;бесплатное
+            размещение
+            на&nbsp;Бумстартере</span>
+        </div>
+        <form method="POST" action="mail.php" class="brif-form" id="brifForm">
+          <div class="input-block">
+            <input type="text" class="input" placeholder="Имя" autocomplete="off" name="boomname" minlength="2"
+              maxlength="80">
+          </div>
+          <div class="input-block">
+            <input type="tel" class="input form-tel" data-tel-input autocomplete="off" name="boomtel" minlength="18"
+              maxlength="18" placeholder="Телефон">
+          </div>
+          <input type="submit" value="Оставить заявку" class="btn-primary">
+        </form>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="wrap">
+      <div class="footer-privacy">
+        <p>
+          Предложение действует для клиентов малого и&nbsp;среднего бизнеса (юридических лиц и&nbsp;индивидуальных
+          предпринимателей).
+          Счет для бизнеса 0&nbsp;рублей&nbsp;&mdash; предоставляется при открытии первого расчетного счета
+          в&nbsp;валюте&nbsp;РФ в&nbsp;Банке ВТБ
+          (публичное акционерное общество) и&nbsp;при одновременном подключении пакета услуг
+          &laquo;На&nbsp;старте&raquo;. По&nbsp;пакету услуг &laquo;На
+          старте&raquo; в&nbsp;течение первых 3&nbsp;месяцев (первый календарный месяц начинается с&nbsp;даты открытия
+          счета и&nbsp;заканчивается
+          последним календарным днем месяца, в&nbsp;котором открыт счет, период &laquo;3&nbsp;месяца сдаты открытия
+          счета&raquo; заканчивается
+          в&nbsp;последний календарный день 3-го календарного месяца) не&nbsp;взимается ежемесячная плата при
+          подключении системы
+          ДБО не&nbsp;позднее 2-го месяца обслуживания. Далее, начиная с&nbsp;4-го месяца обслуживания, ежемесячная
+          плата за&nbsp;пакет
+          услуг не&nbsp;взимается при входящем обороте по&nbsp;счету 10&nbsp;тыс. руб.&nbsp;и&nbsp;более в&nbsp;месяц.
+          Если входящий оборот по&nbsp;счету
+          за&nbsp;месяц составит менее 10&nbsp;тыс. руб., будет взиматься комиссия 199&nbsp;руб.&nbsp;в&nbsp;месяц.
+          Пакет услуг &laquo;На&nbsp;старте&raquo; можно
+          подключить только новым клиентам, не&nbsp;имеющим действующих или закрытых в&nbsp;течении последних
+          12&nbsp;месяцев расчетных
+          счетов в&nbsp;Банке ВТБ (ПАО). Период обслуживания пакета услуг ограничен&nbsp;&mdash; не&nbsp;превышает
+          12&nbsp;месяцев (первый
+          календарный месяц начинается с&nbsp;даты открытия счета и&nbsp;заканчивается последним календарным днем
+          месяца, в
+          котором открыт счет; период &laquo;12&nbsp;месяцев с&nbsp;даты открытия счета&raquo; заканчивается
+          в&nbsp;последний календарный день
+          12-го календарного месяца). По&nbsp;истечении 12&nbsp;месяцев клиент переводится на&nbsp;базовые тарифы или,
+          по&nbsp;заявлению
+          клиента, может быть переведен на&nbsp;любой действующий пакет услуг. По&nbsp;пакетам услуг &laquo;Самое
+          важное&raquo; и&nbsp;&laquo;Все
+          включено&raquo; в&nbsp;рамках акции &laquo;Начнем с&nbsp;лучшего!&raquo; в&nbsp;течение 3&nbsp;месяцев (первый
+          календарный месяц начинается с&nbsp;даты
+          открытия счета и&nbsp;заканчивается последним календарным днем месяца, в&nbsp;котором открыт счет, период
+          &laquo;3&nbsp;месяца с
+          даты открытия счета&raquo; заканчивается в&nbsp;последний календарный день 3-го календарного месяца)
+          не&nbsp;взимается
+          ежемесячная плата при подключении системы ДБО не&nbsp;позднее 2-го месяца обслуживания, далее стоимость
+          составит от
+          1020 руб./мес.&nbsp;и&nbsp;от&nbsp;1615 руб./мес. соответственно (стоимость указана при условии авансовой
+          оплаты за&nbsp;12
+          месяцев). Акция &laquo;Начнем случшего!&raquo; действует для новых клиентов, не&nbsp;имевших расчетных счетов
+          в&nbsp;Банке ВТБ (ПАО)
+          в&nbsp;течение последнего года. При оплате стоимости пакетов услуг &laquo;Самое важное&raquo;, &laquo;Все
+          включено&raquo; и&nbsp;&laquo;Большие
+          обороты&raquo; авансовым платежом, предоставляется скидка: от&nbsp;3&nbsp;до&nbsp;5&nbsp;месяцев
+          (вкл.)&nbsp;&mdash; скидка&nbsp;5%, от&nbsp;6&nbsp;до&nbsp;11&nbsp;месяцев
+          (вкл.) скидка&nbsp;&mdash; 10%, 12&nbsp;месяцев&nbsp;&mdash; 15%.
+        </p>
+        <p>
+          При переводе денежных средств на&nbsp;счета физическихлиц взимается плата согласно тарифам Банка. Указанные
+          условия
+          не&nbsp;являются офертой или приглашением делать оферты. Сроки действия предложения и&nbsp;перечень отделений
+          Банка,
+          предлагающих пакетные предложения на&nbsp;специальных условиях уточняйте по&nbsp;телефону, а&nbsp;также
+          в&nbsp;офисах Банка ВТБ
+          (ПАО), обслуживающих юридическихлиц (кроме кредитных организаций). Подробные тарифы с&nbsp;полным перечнем
+          услуг
+          указаны на&nbsp;сайте vtb.ru (0+).
+        </p>
+      </div>
+    </div>
+    <div class="line"></div>
+    <div class="wrap">
+      <div class="footer-nav">
+        <div class="footer-links">
+          
+          <a href="files/2021-02-15_политика_по_обработке_ПД.pdf" target="_blank" class="link footer-nav__link">Политика конфиденциальности</a>
+        </div>
+        <a href="#top" class="anchor footer-logo">
+          <img src="img/logo.svg" alt="Boomstarter и ВТБ: Быстрый старт">
+        </a>
+      </div>
+    </div>
+  </footer>
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery.validate.min.js"></script>
+  <script src="js/jquery.mask.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
