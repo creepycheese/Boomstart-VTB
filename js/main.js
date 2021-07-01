@@ -193,7 +193,22 @@ $('.form-tel').on('input', function () {
 
 const toModalBrifBtns = document.querySelectorAll('.js-toModalBrif')
 const modalBrif = document.querySelector('.modal-brif')
+const modalThank = document.querySelector('.modal-thank')
+if (modalThank) {
+  const closeModalThank = modalThank.querySelector('.modal-thank-close')
+  closeModalThank.addEventListener('click', function (e) {
+    modalThank.classList.remove('active')
+    document.body.style.overflow = 'auto'
+    document.querySelector('html').style.overflow = 'auto'
+  })
+  const modalBg = modalThank.querySelector('.modal-bg')
+  modalBg.addEventListener('click', function (e) {
+    modalThank.classList.remove('active')
+    document.body.style.overflow = 'auto'
+    document.querySelector('html').style.overflow = 'auto'
 
+  })
+}
 
 if (modalBrif && toModalBrifBtns.length > 0) {
   const modalBg = modalBrif.querySelector('.modal-bg')
