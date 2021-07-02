@@ -1,0 +1,270 @@
+.getBonuses
+  position: relative
+  padding-top: 110px
+  .wrap-mini 
+    z-index: 3
+    position: relative
+    display: flex
+    justify-content: space-between
+    align-items: center
+  &-bg 
+    position: absolute
+    top: 40px
+    left: -300px
+    z-index: 1
+
+  &-bg-1 
+    position: absolute
+    bottom: -180px
+    left: 70px
+    width: 480px
+
+  &-bg-2
+    position: absolute
+    top: -90px
+    left: -90px
+    width: 390px
+    z-index: 1
+  &-bg-3
+    position: absolute
+    bottom: -120px
+    left: -140px
+    width: 180px
+    z-index: 1
+
+  &-bg-4
+    display: none
+  &-item 
+    position: relative
+    width: 350px
+    margin: 0 auto
+    display: flex
+    align-items: center
+    justify-content: flex-start
+    margin-bottom: 40px
+    &:last-child
+      margin-bottom: 0
+
+    img 
+      margin-right: 20px
+      width: 50px
+      height: 50px
+
+    span 
+      +reg 
+      font-size: 20px
+      line-height: 24px
+      color: #000
+
+    a, 
+    .hint
+      text-decoration: underline
+      color: #0037FF
+      cursor: pointer
+
+
+  &-block 
+    width: 350px
+    margin-left: 50px
+
+  &-title 
+    margin-bottom: 30px
+    text-align: left
+    padding-left: 70px
+
+  &-text 
+    width: 300px
+    margin-right: 50px
+    margin-top: 30px
+
+    position: relative
+    span 
+      display: block 
+      position: relative
+      z-index: 3
+      font-size: 28px
+      line-height: 34px
+      color: #000
+      +medium
+
+
+
+@media ( max-width: 1300px )
+  .getBonuses 
+    &-text 
+      margin-right: 0
+
+
+@media ( max-width: 1024px )
+  .getBonuses 
+    &-bg-2
+      position: absolute
+      top: -90px
+      left: -90px
+      width: 360px
+      z-index: 1
+    &-bg-3
+      position: absolute
+      bottom: -130px
+      left: -80px
+      width: 150px
+      z-index: 1
+    &-text 
+      span 
+        font-size: 24px
+        line-height: 28px
+
+
+
+@media ( max-width: 960px )
+  .getBonuses 
+    &-bg-2
+      position: absolute
+      top: -90px
+      left: -90px
+      width: 360px
+      z-index: 1
+    &-bg-3
+      position: absolute
+      bottom: -130px
+      left: -40px
+      width: 150px
+      z-index: 1
+
+@media ( max-width: 900px )
+  .getBonuses 
+    .wrap-mini 
+      flex-direction: column
+      align-items: flex-start
+    &-bg 
+      transform: rotate(-8.63deg)
+      position: absolute
+      top: auto
+      bottom: 0
+      left: -100px
+      z-index: 1
+      width: 1300px
+    &-bg-1 
+      display: none
+    &-bg-2 
+      display: none
+    &-bg-3
+      width: 400px
+      left: -350px
+      bottom: -200px
+    &-bg-4 
+      display: block
+      position: absolute
+      bottom: 130px
+      left: 40px
+      z-index: 2
+    &-text 
+      margin-left: 200px
+    &-block
+      margin-left: 0
+      margin-bottom: 100px
+      width: 100%
+    &-title 
+      padding-left: 0
+
+    &-item 
+      margin-bottom: 20px 
+      width: 100%
+
+
+@media ( max-width: 500px )
+  .getBonuses 
+    padding-bottom: 90px
+    .wrap-mini 
+      flex-direction: column
+      align-items: flex-start
+    &-bg 
+      transform: rotate(-8.63deg)
+      position: absolute
+      top: auto
+      bottom: 20px
+      left: -50px
+      z-index: 1
+      width: 760px
+    &-bg-1 
+      display: none
+    &-bg-2 
+      display: none
+    &-bg-3
+      width: 275px
+      left: -250px
+      bottom: -110px
+    &-bg-4 
+      display: block
+      position: absolute
+      bottom: 110px
+      left: 40px
+      z-index: 2
+    &-text 
+      margin-left: 140px
+      width: 200px
+      margin-top: 0
+      span 
+        font-size: 18px
+        line-height: 24px
+    &-block
+      margin-left: 0
+      margin-bottom: 130px
+      width: 100%
+    &-title 
+      padding-left: 0
+
+    &-item 
+      margin-bottom: 20px 
+      width: 100%
+
+
+@media ( max-width: 425px )
+  .getBonuses 
+    padding-bottom: 90px
+    padding-top: 70px
+    .wrap-mini 
+      flex-direction: column
+      align-items: flex-start
+    &-bg 
+      transform: rotate(-8.63deg)
+      position: absolute
+      top: auto
+      bottom: 40px
+      left: -50px
+      z-index: 1
+      width: 660px
+    &-bg-1 
+      display: none
+    &-bg-2 
+      display: none
+    &-bg-3
+      width: 275px
+      left: -230px
+      bottom: -150px
+    &-bg-4 
+      display: block
+      position: absolute
+      bottom: 75px
+      left: 40px
+      z-index: 2
+    &-text 
+      margin-left: 120px
+      width: 200px
+      margin-top: 0
+      span 
+        font-size: 16px
+        line-height: 20px
+    &-block
+      margin-left: 0
+      margin-bottom: 100px
+      width: 100%
+    &-title 
+      padding-left: 0
+
+    &-item 
+      margin-bottom: 20px 
+      width: 100%
+      span 
+        font-size: 16px
+        line-height: 20px

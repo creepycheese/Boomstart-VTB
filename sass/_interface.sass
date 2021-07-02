@@ -1,0 +1,192 @@
+* 
+  outline: none  !important
+  margin: 0
+  padding: 0
+
+  box-sizing: border-box
+  outline: 0 !important
+  outline-offset: 0 !important
+  transition: 0 
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0)
+  opacity: 1
+  +reg
+  font-weight: 400
+  -webkit-font-smoothing: antialiased
+  -moz-osx-font-smoothing: grayscale
+  font-synthesis: none
+  -webkit-text-size-adjust: 100%
+
+
+@media screen and ( min-width: 768px  )
+  *
+    scrollbar-color: #0085FF #F6F7FA
+    scrollbar-width: none
+  ::-webkit-scrollbar 
+    width: 4px 
+    height: 2px 
+    opacity: 0
+    background-color: #F6F7FA
+
+  ::-webkit-scrollbar-thumb 
+    background-color: #0085FF
+    border-radius: 10px
+
+body 
+  position: relative
+
+.main 
+  position: relative
+  overflow: hidden
+
+
+.wrap 
+  width: 1200px
+  margin: 0 auto
+  &-mini 
+    width: 1000px
+    margin: 0 auto
+
+.section
+  padding-bottom: 130px
+  &-title
+    text-align: center 
+    font-size: 30px
+    line-height: 36px
+    +extra
+    margin-bottom: 60px 
+    color: #333
+
+@media ( max-width: 1300px )
+  .wrap 
+    width: 1100px
+    &-mini
+      width: 940px
+
+@media ( max-width: 1140px )
+  .wrap 
+    width: 1024px
+    &-mini
+      width: 940px
+
+@media ( max-width: 1040px )
+  .wrap 
+    width: 90%
+    &-mini
+      width: 90%
+@media ( max-width: 750px )
+  .section
+    &-title
+      font-size: 28px
+      line-height: 32px
+      margin-bottom: 40px 
+
+@media ( max-width: 425px )
+  .wrap 
+    width: 92% 
+    &-mini 
+      width: 92%
+  .section
+    &-title
+      font-size: 24px
+      line-height: 28px
+      margin-bottom: 20px 
+
+
+
+.btn 
+  cursor: pointer
+  padding: 9px 30px
+  border: 2px solid #fff
+  display: flex
+  align-items: center
+  justify-content: center
+  text-align: center 
+  border-radius: 50px
+  width: max-content
+  +medium 
+  color: #fff
+  font-size: 16px
+  line-height: 20px
+  transition: 0.3s
+  background: rgba(255,255,255,0)
+  &:hover 
+    transition: 0.3s
+    background-color: #fff
+    color: #0037FF
+
+.btn-pink
+  color: #fff !important 
+  border: 2px solid #FA478A !important
+  background-color: #FA478A !important
+.btn-pink:hover 
+  background-color: lighten(#FA478A, 5% ) !important
+  border: 2px solid lighten(#FA478A, 5% ) !important
+
+
+.btn-primary
+  cursor: pointer
+  padding: 9px 30px
+  border: 2px solid #fff
+  display: flex
+  align-items: center
+  justify-content: center
+  text-align: center 
+  border-radius: 50px
+  width: max-content
+  +medium 
+  color: #fff
+  font-size: 16px
+  line-height: 20px
+  transition: 0.3s
+  background: linear-gradient(90deg, #0037FF 0%, #0085FF 75%)
+  &:hover 
+    transition: 0.3s
+    opacity: 0.9
+
+
+
+.input-block 
+  display: flex
+  flex-wrap: wrap
+  width: 370px
+  input
+    position: relative 
+    display: block
+    width: 100%
+    border-radius: 50px 
+    background-color: #Ffffff
+    border: 1px solid #2F80ED
+    padding: 9px 30px
+    font-size: 16px
+    line-height: 20px
+    color: rgba(0, 55, 255, 1)
+    transition: 0.2s
+    +bold
+
+    &::placeholder
+      color: #8AA9D6
+      background: linear-gradient(90deg, rgba(0, 55, 255, 0.4) 0%, rgba(0, 133, 255, 0.4) 75%)
+
+      -webkit-background-clip: text
+      -webkit-text-fill-color: transparent
+      +bold
+
+
+  &.invalid 
+    input
+      border: 1px solid #D42C37
+      transition: 0.2s
+      color: #D42C37
+      &::placeholder
+        color: #D42C37
+        background: #D42C37
+        -webkit-background-clip: text
+        -webkit-text-fill-color: transparent
+  span.invalid 
+    font-size: 14px
+    line-height: 14px
+    color: #D42C37
+    display: block
+    margin-top: 6px
+    padding-left: 18px
+    +medium

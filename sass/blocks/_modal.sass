@@ -1,0 +1,102 @@
+.modal 
+  position: fixed
+  top: 0 
+  left: 0 
+  
+  width: 100%
+  height: 100%
+  z-index: 300
+
+  display: none
+
+  align-items: center
+  justify-content: center
+  &.active 
+    display: flex
+
+  &-bg 
+    position: absolute
+    top: 0 
+    left: 0 
+    width: 100%
+    height: 100%
+    background: linear-gradient(90deg, #0037FF 0%, #0085FF 75%)
+    opacity: 0.7
+  &-block 
+    padding: 60px
+    width: 600px
+    box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.1)
+    border-radius: 25px
+    background-color: #fff
+    position: relative
+
+  &-brif 
+    &-title 
+      +extra 
+      background:  linear-gradient(90deg, #0037FF 0%, #0085FF 75%)
+      -webkit-background-clip: text
+      -webkit-text-fill-color: transparent
+      color: #0037FF
+      font-size: 30px
+      line-height: 36px
+      margin-bottom: 5px
+    &-subtitle
+      display: block 
+      +reg
+      background:  linear-gradient(90deg, #0037FF 0%, #0085FF 75%)
+      -webkit-background-clip: text
+      -webkit-text-fill-color: transparent
+      color: #0037FF
+      font-size: 20px
+      line-height: 24px
+
+    &-form 
+      margin-top: 50px
+      .input-block 
+        width: 100%
+        margin-bottom: 10px
+
+      .btn-primary 
+        margin-top: 20px
+        width: 100%
+
+  &-thank 
+    &-close 
+      width: 100%
+      margin-top: 50px
+
+@media ( max-width: 650px )
+  .modal 
+    &-block 
+      padding: 30px
+      width: 90%
+      box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.1)
+      border-radius: 20px
+    &-brif
+      &-title 
+        font-size: 24px
+        line-height: 28px
+      &-subtitle
+        font-size: 18px
+        line-height: 22px 
+      
+
+
+@media ( max-width: 425px )
+  .modal 
+    &-block 
+      padding: 20px 20px
+      padding-bottom: 25px
+      width: 92%
+      box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.1)
+      border-radius: 16px
+    &-brif
+      &-title 
+        font-size: 24px
+        line-height: 28px
+      &-subtitle
+        font-size: 18px
+        line-height: 22px 
+      
+      &-form 
+        margin-top: 30px

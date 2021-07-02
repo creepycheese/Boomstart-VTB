@@ -1,0 +1,70 @@
+.bonuses 
+  padding-top: 110px
+  padding-bottom: 100px
+  &-wrap 
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap 
+
+  &-item 
+    width: calc(50% - 8px)
+    margin-bottom: 40px
+    display: flex
+    align-items: center 
+    justify-content: flex-start
+    &:nth-last-child(1),
+    &:nth-last-child(2)
+      margin-bottom: 0
+      
+    img 
+      width: 125px
+      height: 125px
+      margin-right: 15px 
+
+    span 
+      +reg 
+      font-size: 20px
+      line-height: 24px
+      color: #333
+
+
+
+@media ( max-width: 1040px )
+  .bonuses 
+    padding-bottom: 70px
+@media ( max-width: 900px )
+  .bonuses 
+    padding-bottom: 0px
+@media ( max-width: 750px )
+  .bonuses 
+    padding-top: 90px
+    &-item 
+      span 
+        font-size: 16px
+        line-height: 22px
+
+@media ( max-width: 650px )
+  .bonuses 
+    &-item 
+      display: flex
+      flex-direction: column 
+      img 
+        margin-right: 0
+      span 
+        font-size: 16px
+        line-height: 22px
+        display: block
+        text-align: center
+
+@media ( max-width: 425px )
+  .bonuses 
+    &-item 
+      width: calc(50% - 8px)
+      align-items: flex-start
+      display: flex
+      margin-bottom: 10px
+      span
+        display: block
+        text-align: left
+        font-size: 14px
+        line-height: 16px

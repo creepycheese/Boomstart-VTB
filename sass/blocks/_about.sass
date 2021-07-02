@@ -1,0 +1,380 @@
+.about 
+  padding-top: 110px
+  padding-bottom: 0
+  position: relative
+
+  &-bg-1 
+    position: absolute
+    width: 640px
+    top: 190px
+    right: -300px
+  &-bg-2
+    position: absolute
+    width: 230px
+    top: 230px
+    left: 60%
+  &-bg-3
+    position: absolute
+    width: 275px
+    bottom: -130px
+    left: 8%
+  &-bg-4
+    position: absolute
+    width: 340px
+    bottom: -380px
+    right: -130px
+ 
+
+ 
+
+
+
+  .section-title 
+    font-size: 40px
+    line-height: 48px 
+    margin-bottom: 90px
+
+
+  &-item 
+    display: flex
+    position: relative
+
+  &-item-1
+    padding-left: 150px
+    width: 100%
+    margin-bottom: 140px
+    justify-content: flex-start
+    .about-item 
+      &__img 
+        width: 355px
+        position: absolute
+        top: -105px
+        left: -180px
+      &__descr 
+        width: 250px
+        span 
+          +reg
+          font-size: 20px
+          line-height: 26px
+          color: #333
+
+
+        .hint 
+          display: block
+          +bold
+          
+  &-item-2
+    padding-left: 15px
+    width: 290px
+    align-items: center
+    justify-content: center
+    margin: 0 auto
+    margin-bottom: 165px
+    .about-item 
+      &__img 
+        width: 280px
+        position: absolute
+        top: -70px
+        left: -220px
+      &__descr 
+        width: 290px
+        span 
+          +reg
+          font-size: 20px
+          line-height: 26px
+          color: #333
+
+
+        .hint 
+          display: block
+          +bold
+     
+  &-item-3
+    padding-left: 40px
+    width: 290px
+    align-items: center
+    justify-content: center
+    margin-left: auto
+    margin-bottom: 100px
+    .about-item 
+      &__img 
+        width: 350px
+        position: absolute
+        top: -100px
+        left: -270px
+      &__descr 
+        width: 290px
+        span 
+          +reg
+          font-size: 20px
+          line-height: 26px
+          color: #333
+
+
+        .hint 
+          display: block
+          +bold
+     
+
+
+@media  ( max-width: 1140px )
+  .about 
+    .section-title 
+      font-size: 36px
+      line-height: 44px 
+      margin-bottom: 90px
+    &-bg-1 
+      width: 540px
+      top: 240px
+      right: -300px
+    &-bg-3
+      left: 0%
+
+@media  ( max-width: 1024px )
+  .about 
+    &-bg-1 
+      display: none
+    &-bg-2
+      left: 80%
+    &-bg-3 
+      width: 250px
+      left: -100px
+    &-bg-4 
+      width: 300px
+      bottom: -300px
+    &-item-1
+
+      .about-item 
+        &__img 
+          width: 300px
+          position: absolute
+          top: -105px
+          left: -140px
+     
+
+@media  ( max-width: 750px )
+  .about 
+    padding-top: 90px
+    &-bg-2 
+      display: none
+    &-bg-3 
+      display: none
+    &-bg-4 
+      display: none
+    .section-title 
+      font-size: 28px
+      line-height: 36px
+      margin-bottom: 60px
+
+    &-item-1 
+      padding: 0
+      width: 200px
+      margin-bottom: 140px
+      margin-left: auto
+      margin-right: 140px
+      .about-item
+         
+        &__img 
+          width: 240px
+          left: -240px  
+          top: -70px
+        &__descr 
+          width: 100%
+          span 
+            font-size: 16px
+            line-height: 20px
+
+    &-item-2 
+      margin-left: 0 
+      margin-right: auto
+      margin-left: 140px
+      padding: 0
+      width: 200px
+      margin-bottom: 140px
+      .about-item 
+        &__img 
+          top: -90px 
+          width: 250px
+          left: 100%
+        &__descr 
+          width: 100%
+          span 
+            font-size: 16px
+            line-height: 20px
+    &-item-3
+      width: 200px
+      margin-right: 140px
+      margin-bottom: 0
+      .about-item 
+        &__img 
+          width: 250px
+          transform: rotate(52deg)
+          left: -200px
+        &__descr 
+          width: 100%
+          span 
+            font-size: 16px
+            line-height: 20px
+
+
+
+@media  ( max-width: 600px )
+  .about 
+    padding-top: 90px
+    &-item-1 
+      padding: 0
+      width: 200px
+      margin-left: auto
+      margin-right: 80px
+      .about-item
+         
+        &__img 
+          width: 240px
+          left: -240px  
+          top: -70px
+        &__descr 
+          width: 100%
+          span 
+            font-size: 16px
+            line-height: 20px
+
+    &-item-2 
+      margin-left: 0 
+      margin-right: auto
+      margin-left: 80px
+      padding: 0
+      width: 200px
+      .about-item 
+        &__img 
+          top: -100px 
+          left: 100%
+        &__descr 
+          width: 100%
+          span 
+            font-size: 16px
+            line-height: 20px
+    &-item-3
+      width: 200px
+      margin-right: 80px
+      margin-bottom: 0
+      .about-item 
+        &__img 
+          width: 250px
+          transform: rotate(52deg)
+          left: -200px
+        &__descr 
+          width: 100%
+          span 
+            font-size: 16px
+            line-height: 20px
+
+
+@media  ( max-width: 500px )
+  .about 
+    padding-top: 90px
+    &-item-1 
+      padding: 0
+      width: 200px
+      margin-bottom: 110px
+      margin-left: auto
+      margin-right: 50px
+      .about-item
+         
+        &__img 
+          width: 240px
+          left: -240px  
+          top: -70px
+        &__descr 
+          width: 100%
+          span 
+            font-size: 16px
+            line-height: 20px
+
+    &-item-2 
+      margin-left: 0 
+      margin-right: auto
+      margin-left: 50px
+      padding: 0
+      width: 200px
+      margin-bottom: 120px
+      .about-item 
+        &__img 
+          top: -100px 
+          left: 100%
+        &__descr 
+          width: 100%
+          span 
+            font-size: 16px
+            line-height: 20px
+    &-item-3
+      width: 200px
+      margin-right: 50px
+      margin-bottom: 0
+      .about-item 
+        &__img 
+          width: 250px
+          transform: rotate(52deg)
+          left: -200px
+        &__descr 
+          width: 100%
+          span 
+            font-size: 16px
+            line-height: 20px
+
+
+
+@media  ( max-width: 425px )
+  .about 
+    padding-top: 70px
+    .section-title 
+      font-size: 24px
+      line-height: 28px
+    &-item-1 
+      padding: 0
+      width: 140px
+      margin-bottom: 110px
+      margin-left: auto
+      margin-right: 0
+      .about-item
+         
+        &__img 
+          width: 240px
+          left: -240px  
+          top: -70px
+        &__descr 
+          width: 100%
+          span 
+            font-size: 16px
+            line-height: 20px
+
+    &-item-2 
+      margin-left: 0 
+      margin-right: auto
+      margin-left: 0
+      padding: 0
+      width: 170px
+      margin-bottom: 120px
+      .about-item 
+        &__img 
+          top: -100px 
+          left: 72%
+        &__descr 
+          width: 100%
+          span 
+            font-size: 16px
+            line-height: 20px
+    &-item-3
+      width: 140px
+      padding: 0
+      margin-right: 0
+      margin-bottom: 0
+      .about-item 
+        &__img 
+          width: 250px
+          transform: rotate(58deg)
+          left: -230px
+        &__descr 
+          width: 100%
+          span 
+            font-size: 16px
+            line-height: 20px

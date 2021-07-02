@@ -1,0 +1,97 @@
+.header 
+  padding: 6px 0
+  background: linear-gradient(90deg, #0037FF 0%, #0085FF 75%)
+
+  position: fixed
+  top: -100px
+  left: 0 
+  width: 100% 
+
+  z-index: 100
+  transition: 0.3s
+
+  &.header-fixed
+    top: 0
+    transition: 0.3s
+  .wrap 
+    display: flex
+    align-items: center 
+    justify-content: space-between
+
+  &-nav 
+    ul 
+      list-style: none 
+      display: flex 
+      li 
+        margin-right: 30px
+        a 
+          color: #fff
+          font-size: 16px
+          line-height: 20px
+          transition: 0.2s
+
+          &:hover 
+            opacity: 0.8
+            transition: 0.2s
+        &:last-child
+          margin-right: 0
+
+
+  &-btn
+    padding: 3px 30px      
+
+.flot 
+  display: none
+
+@media ( max-width: 1140px )
+  .header 
+    .logo 
+      width: 360px
+      display: flex
+      align-items: center
+      img 
+        width: 100%
+    &-nav 
+      ul 
+        li 
+          margin-right: 15px
+
+@media ( max-width: 1040px )
+  .header 
+    .logo 
+      width: 360px
+      display: flex
+      align-items: center
+      img 
+        width: 100%
+    &-nav 
+      display: none
+      ul 
+        li 
+          margin-right: 15px
+
+
+@media  ( max-width: 700px)
+  .header 
+    &-btn 
+      display: none
+
+@media  ( max-width: 425px)
+  .header 
+    display: none
+    .logo 
+      width: 280px
+
+  .flot 
+    position: fixed
+    bottom: 30px 
+    right: 10px
+    z-index: 50
+    border-radius: 50%
+    background-color: #fff
+    width: 65px
+    height: 65px
+    display: flex
+    align-items: center
+    justify-content: center
+    box-shadow: 0px 4px 15px 3px rgba(0, 0, 0, 0.1)

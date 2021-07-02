@@ -1,0 +1,106 @@
+.brif 
+  padding-top: 150px
+  position: relative
+  z-index: 5
+  &-wrap 
+    display: flex
+    align-items: center
+    justify-content: space-between
+
+  &-form 
+    width: 370px
+    .btn-primary 
+      width: 100%
+      margin-top: 20px
+    .input-block 
+      margin-bottom: 10px
+    &-privacy 
+      background:  linear-gradient(90deg, #0037FF 0%, #0085FF 75%)
+      -webkit-background-clip: text
+      -webkit-text-fill-color: transparent
+      color: #0037FF
+      display: block
+      margin-top: 12px
+      font-size: 12px
+      line-height: 14px
+      +reg
+      .hint 
+        color: #0037FF
+        text-decoration: underline !important
+        border-bottom: 1px solid   #0085FF 
+  &-descr 
+    width: 500px
+  &-title 
+    +extra
+    color: #0037FF
+    background:  linear-gradient(90deg, #0037FF 0%, #0085FF 75%)
+    -webkit-background-clip: text
+    -webkit-text-fill-color: transparent
+    text-align: left
+    margin-bottom: 0
+
+  &-subtitle 
+    display: block
+    font-size: 20px
+    line-height: 24px
+    +reg
+    background:  linear-gradient(90deg, #0037FF 0%, #0085FF 75%)
+    -webkit-background-clip: text
+    -webkit-text-fill-color: transparent
+
+  
+
+@media ( max-width: 1024px )
+  .brif 
+    padding-top: 120px
+    padding-bottom: 90px
+    &-title 
+      text-align: center
+    &-subtitle 
+      text-align: center
+
+    &-wrap 
+      flex-wrap: wrap 
+      justify-content: center
+    &-descr 
+      width: 70%
+
+    &-form 
+      margin-top: 25px
+
+
+
+@media ( max-width: 750px )
+  .brif 
+    padding-bottom: 90px
+    &-descr 
+      width: 100%
+    &-subtitle 
+      font-size: 18px 
+      line-height: 22px
+@media ( max-width: 500px )
+  .brif 
+    padding-top: 60px
+    padding-bottom: 60px
+    &-title 
+      text-align: left
+      br 
+        display: none
+    &-subtitle 
+      text-align: left
+      br 
+        display: none
+
+    &-form 
+      width: 100%
+      .input-block 
+        width: 100%
+
+@media ( max-width: 425px )
+  .brif 
+    padding-top: 50px
+    &-subtitle 
+      font-size: 16px
+      line-height: 20px
+
+
